@@ -23,16 +23,16 @@ export default function FloatingCan() {
         // the text needs to be higher relative to the viewport. 
         // The Hero component has z-20. We will set this to z-10.
 
-        // Initial State (Hero)
-        gsap.set(can, {
-            xPercent: -50,
-            yPercent: -50,
-            left: "50%",
-            top: "50%",
+            // Initial State (Hero)
+            gsap.set(can, {
+                xPercent: -50,
+                yPercent: -50,
+                left: "50%",
+                top: "50%",
             scale: 2.5, // Increased from 1.5 - BIGGER HERO
-            rotate: -15,
+                rotate: -15,
             opacity: 1
-        });
+            });
 
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -40,8 +40,8 @@ export default function FloatingCan() {
                 start: "top top",
                 end: "bottom bottom",
                 scrub: 2  // Increased from 1 to 2 for smoother, slower animation that follows scroll
-            }
-        });
+                }
+            });
 
         // 1. Move to Neon Blue Section
         tl.to(can, {
@@ -85,9 +85,9 @@ export default function FloatingCan() {
             scale: 1.2,  // Slightly larger
             rotate: -20,  // Tilt left like it's falling
             filter: "hue-rotate(0deg) brightness(1.1) drop-shadow(0 0 40px rgba(30,64,255,0.3))",
-            opacity: 1,
+                            opacity: 1,
             duration: 1.5,
-            ease: "power2.out"
+                            ease: "power2.out"
         }, 3);
 
         // 5. Move to "Defy The Limits" (Lifestyle Section)
@@ -100,9 +100,9 @@ export default function FloatingCan() {
             scale: 1.4, // Slightly larger for impact
             rotate: 0,  // Straighten up
             filter: "hue-rotate(0deg) brightness(1.2) drop-shadow(0 0 50px rgba(30,64,255,0.4))", // Glow
-            opacity: 1,
+                            opacity: 1,
             duration: 1.5,
-            ease: "power2.out"
+                            ease: "power2.out"
         }, 4);
 
         // 6. Move to Ecommerce "Neon Blue 12 Pack" Card -- AND FADE OUT
@@ -117,8 +117,8 @@ export default function FloatingCan() {
             rotate: 0,
             filter: "hue-rotate(0deg) brightness(1)",
             opacity: 0, // Fade out as it lands
-            duration: 1.5,
-            ease: "power2.inOut"
+                        duration: 1.5,
+                        ease: "power2.inOut"
         }, 5);
 
     }, { scope: container });

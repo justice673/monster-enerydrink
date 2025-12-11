@@ -53,7 +53,7 @@ export default function Hero() {
                     <span className="hero-text text-5xl md:text-8xl lg:text-9xl text-white block mb-2 drop-shadow-lg">Unleash</span>
                     <span className="hero-text text-6xl md:text-9xl lg:text-[10rem] text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40 block drop-shadow-2xl">The Motion</span>
                 </h2>
-                <p className="hero-text mt-8 text-gray-400 text-lg md:text-xl max-w-lg font-inter tracking-wide uppercase font-medium">
+                <p className="hero-text mt-8 text-white text-lg md:text-xl max-w-lg font-inter tracking-wide uppercase font-medium">
                     Pure Energy. Zero Compromise. <br />The next generation of performance fuel.
                 </p>
 
